@@ -32,8 +32,8 @@ Bibliotecas
 
 ## 💻 Projeto
 Cards Nike
-
- <a href="https://fervent-mirzakhani-d80cd8.netlify.app/">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<br></br>
+ <a  href="https://fervent-mirzakhani-d80cd8.netlify.app/ ">Site</a> 
 
 ## 📝 Licença
 
