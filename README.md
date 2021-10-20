@@ -33,6 +33,8 @@ Bibliotecas
 ## 💻 Projeto
 Cards Nike
 
+ <a href="https://fervent-mirzakhani-d80cd8.netlify.app/">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
