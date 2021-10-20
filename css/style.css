@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*-- VARIABLES CSS--*/
+/*Colores*/
+:root {
+  --first-color: #eaeaea;
+  --third-color: #2b2b2b;
+  --accent-color: #c2686c;
+  --dark-color: #2d2d2f;
+}
+
+/*Tipografia responsive*/
+:root {
+  --h1-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --h1-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+.main {
+  padding: 2rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1280px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  margin: 2.5rem;
+  width: 4rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+article {
+  background-color: var(--first-color);
+}
+.card__img {
+  width: 11.25rem;
+  padding: 3rem 0;
+  transition: 0.5s ease;
+}
+.card__name {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-color: var(--third-color);
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+.card__icon {
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+.card__icon:hover {
+  color: var(--accent-color);
+}
+.card__precis {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.card__preci {
+  display: block;
+  text-align: center;
+}
+.card__prenci--before {
+  font-size: var(--smaller-font-size);
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+}
+.card__prenci--before:nth-of-type(2) {
+  font-size: var(--h3-font-size);
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+.card:hover {
+  box-shadow: 0px 4px 4px rgba(23, 23, 23, 0.58);
+  transition: 0.3s ease;
+}
+.card:hover .card__name {
+  left: 0;
+}
+.card:hover .card__img {
+  transform: rotate(30deg);
+  margin-left: 3.5rem;
+}
+
+.card:hover .card__precis {
+  margin-left: 3.5rem;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
